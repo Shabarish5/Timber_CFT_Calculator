@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #FDF6E3;
+    color: #3B5323;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #E6E2AF;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #556B2F;
+}
+
+.input-group {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group label {
+    flex: 1;
+    font-weight: bold;
+}
+
+.input-group input {
+    flex: 2;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #556B2F;
+    border-radius: 4px;
+    background: #FDF6E3;
+    color: #3B5323;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background: #556B2F;
+    color: #FDF6E3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    background: #3B5323;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #3B5323;
+    text-align: center;
+    font-weight: bold;
+}
+
+#result.success {
+    color: #556B2F;
+}
+
+#result.error {
+    color: #A52A2A;
+}
+
+.reference-section h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    color: #556B2F;
+}
+
+#toggleTable {
+    background: none;
+    border: 2px solid #556B2F;
+    color: #556B2F;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+#toggleTable:hover {
+    background: #556B2F;
+    color: #FDF6E3;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #FDF6E3;
+    position: relative;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #556B2F;
+    color: #3B5323;
+}
+
+table th {
+    background: #556B2F;
+    color: #FDF6E3;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+table tbody tr:nth-child(even) {
+    background: #E6E2AF;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.input-group input:focus {
+    border-color: #3B5323;
+    outline: none;
+    box-shadow: 0 0 8px rgba(59, 83, 35, 0.5);
+}
+
+table tbody tr:hover {
+    background: #D0D3C5;
+    transition: background 0.2s;
+}
